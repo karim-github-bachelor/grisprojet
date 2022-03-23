@@ -114,3 +114,89 @@ b5.bind('<Button-1>',getvals)
 b6.bind('<Button-1>',getvals)
 buttons=[b1,b2,b3,b4,b5,b6]
 count=0
+for i in range(6):
+    buttons[count].grid(row=2,column=i)
+    count += 1
+f=Frame(root)
+f.pack()
+b1=Button(f,text='1',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b2=Button(f,text='2',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b3=Button(f,text='3',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b4=Button(f,text='+',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b5=Button(f,text='tan',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b6=Button(f,text='%',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+
+b1.bind('<Button-1>',getvals)
+b2.bind('<Button-1>',getvals)
+b3.bind('<Button-1>',getvals)
+b4.bind('<Button-1>',getvals)
+b5.bind('<Button-1>',getvals)
+b6.bind('<Button-1>',getvals)
+buttons=[b1,b2,b3,b4,b5,b6]
+count=0
+for i in range(6):
+    buttons[count].grid(row=3,column=i)
+    count += 1
+f=Frame(root)
+f.pack()
+b1=Button(f,text='.',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b2=Button(f,text='0',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b3=Button(f,text='sinh',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b4=Button(f,text='cosh',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b5=Button(f,text='tanh',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b6=Button(f,text='pi',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b1.bind('<Button-1>',getvals)
+b2.bind('<Button-1>',getvals)
+b3.bind('<Button-1>',getvals)
+b4.bind('<Button-1>',getvals)
+b5.bind('<Button-1>',getvals)
+b6.bind('<Button-1>',getvals)
+buttons=[b1,b2,b3,b4,b5,b6]
+count=0
+for i in range(6):
+    buttons[count].grid(row=4,column=i)
+    count += 1
+f=Frame(root)
+f.pack()
+
+b1=Button(f,text='log10',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b2=Button(f,text='exp',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b3=Button(f,text='/',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b4=Button(f,text='Clr',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b5=Button(f,text='log',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+b6=Button(f,text='=',font='lucida 15 bold',padx=20,pady=20,borderwidth=3,fg='black',bg='grey',width=3)
+
+
+b1.bind('<Button-1>',getvals)
+b2.bind('<Button-1>',getvals)
+b3.bind('<Button-1>',getvals)
+b4.bind('<Button-1>',getvals)
+b5.bind('<Button-1>',getvals)
+b6.bind('<Button-1>',getvals)
+buttons=[b1,b2,b3,b4,b5,b6]
+count=0
+for i in range(6):
+    buttons[count].grid(row=5,column=i)
+    count += 1
+status_var=StringVar()
+status_var.set('Ready..')
+Label(root,textvariable=status_var,relief=SUNKEN,anchor='w',borderwidth=3,bg='yellow',fg='red').pack(side=BOTTOM,fill=X)
+
+root.mainloop()
